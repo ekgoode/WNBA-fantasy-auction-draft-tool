@@ -9,6 +9,7 @@ To use the current iteration of this app:
 1. Compute projected fantasy score
    
    $ProjFPG_i = \sum_{c\in cats} w_c \times stat_{i,c}$
+   
    $ProjFPS_i = ProjFPG_i \times EstGames_i$
 
 3. Define a "replacement-level" baseline
@@ -18,9 +19,10 @@ To use the current iteration of this app:
 5. Map VORP to dollar values
 
      $S = \sum_{i \in top N}max(0, VORP_i)$
-     $Value_i = 100 \times \frac{max(0, VORP_i}{S}$
    
-6. Dynamically update budget constraint
+     $Value_i = 100 \times \frac{max(0, VORP_i)}{S}$
+   
+7. Dynamically update budget constraint
 
      $BidLimit_i = B_{rem} \times \frac{max(0, VORP_i}{S_{rem}}$
    
