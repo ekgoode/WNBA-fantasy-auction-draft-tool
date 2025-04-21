@@ -1,2 +1,6 @@
 # WNBA-fantasy-auction-draft-tool
-Need help auction drafting for this year's WNBA fantasy league? This repo hosts a tool that can help you come to a fair auction value for each player.
+This repository is an active work in progress.
+
+To use the current iteration of this app:
+1. Set config options in auction.py.
+2. launch app `python auction.py wnba2025_projections.csv`. This loads the app with ESPN's per game projections for their top 100 WNBA players in 2025.
